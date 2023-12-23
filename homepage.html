@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favi.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-XXX" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="...">
+    
+    <script src="script.js">
+      
+    </script>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+       
+        <img src="logo.png" alt="Logo">
+    </div>
+    <div class="profile-container" onmouseover="showTooltip()" onmouseout="hideTooltip()">
+      <button class="premium-button" onclick="openPremiumTab()">Premium</button>
+      <div class="profile-popup" id="profilePopup">
+          
+          <div class="tooltip-container">
+            <span class="text"><img src="profile-modified.png" alt="Profile" class="profile-image" id="profileImage"></span>
+            <span class="tooltip">Balaji</span>
+          </div>
+          
+          </div>
+      </div>
+  </div>
+</header>
+    <div class='app'>
+        <main class='project'>
+          <div class='project-info'>
+            <h1 style = "color: #ececf8;">Hello Balaji👋</h1><br>
+            
+            <div class='project-participants'>
+              <span></span>
+              <span></span>
+              <span></span>
+              <input type="text" id="taskNameInput" placeholder="Enter task name" style="font-size: 14px; padding: 10px; width: 300px;">
+              <button id="addTaskButton" style="font-size: 0.64em; padding: 12px;">+</button>
+                
+              </div>
+          </div>
+          <hr><br>
+          <div class='project-tasks'>
+           
+
+            <div class='project-column'>
+              <div class='project-column-heading'>
+                <h2 class='project-column-heading__title'>Task Ready</h2><button class='project-column-heading__options'><i class="fas fa-ellipsis-h"></i></button>
+              </div>
+              <div class='task' draggable='true'>
+                
+                <div class='task__tags'><span class='task__tag task__tag--copyright'>Academics</span><button class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
+                <p style ="color:#ffffff;">Study for Math Exam</p>
+                <div class='task__stats'>
+                  <span><time datetime="2023-12-22T20:00:00"> Dec 23</time></span>
+                 
+                  <span class='task__owner'></span>
+                </div>
+              </div>
+              
+                      <div class='task' draggable='true'>
+                <div class='task__tags'><span class='task__tag task__tag--design'>Miscellaneous</span><button class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
+                <p style ="color:#ffffff;">Organize Study Group Session</p>
+                <div class='task__stats'>
+                  <span><time datetime="2021-11-24T20:00:00"> Dec 23</time></span>
+                  
+                  <span class='task__owner'></span>
+                </div>
+              </div>
+              
+                      <div class='task' draggable='true'>
+                <div class='task__tags'><span class='task__tag task__tag--copyright'>Academics</span><button class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
+                <p style ="color:#ffffff;">Read Chapter 5 of History Book</p>
+                <div class='task__stats'>
+                  <span><time datetime="2021-11-24T20:00:00"> Dec 23</time></span>
+                  
+                  <span class='task__owner'></span>
+                </div>
+              </div>
+            </div>
+            <div class='project-column'><div class='project-column-heading'>
+                <h2 class='project-column-heading__title'>In Progress</h2><button class='project-column-heading__options'><i class="fas fa-ellipsis-h"></i></button>
+              </div>
+                
+              <div class='task' draggable='true'>
+                <div class='task__tags'><span class='task__tag task__tag--design'>Miscellaneous</span><button class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
+                <p style ="color:#ffffff;">Get a Haircut</p>
+                <div class='task__stats'>
+                  <span><time datetime="2021-11-24T20:00:00"> Dec 23</time></span>
+                   
+                  <span class='task__owner'></span>
+                </div>
+              </div>
+              
+              <div class='task' draggable='true'>
+                <div class='task__tags'><span class='task__tag task__tag--illustration'>Assignments</span><button class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
+                <p style ="color:#ffffff;">Write Research Paper on Artificial Intelligence</p>
+                <div class='task__stats'>
+                  <span><time datetime="2021-11-24T20:00:00"> Dec 23</time></span>
+                  
+                  <span class='task__owner'></span>
+                </div>
+              </div>
+              
+              <div class='task' draggable='true'>
+                <div class='task__tags'><span class='task__tag task__tag--copyright'>Academics</span><button class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
+                <p style ="color:#ffffff;">Review Literature Review Draft</p>
+                <div class='task__stats'>
+                  <span><time datetime="2021-11-24T20:00:00"> Dec 23</time></span>
+                  
+                  <span class='task__owner'></span>
+                </div>
+              </div>
+              
+              <div class='task' draggable='true'>
+                <div class='task__tags'><span class='task__tag task__tag--illustration'>Assignments</span><button class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
+                <p style ="color:#ffffff;">Code Review for Programming Assignment</p>
+                <div class='task__stats'>
+                  <span><time datetime="2021-11-24T20:00:00"> Dec 23</time></span>
+                  
+                  <span class='task__owner'></span>
+                </div>
+              </div>
+              
+              </div>
+            <div class='project-column'><div class='project-column-heading'>
+                <h2 class='project-column-heading__title'>Needs Review</h2><button class='project-column-heading__options'><i class="fas fa-ellipsis-h"></i></button>
+              </div>
+                
+              <div class='task' draggable='true'>
+                <div class='task__tags'><span class='task__tag task__tag--copyright'>Academics</span><button class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
+                <p style ="color:#ffffff;">Plan Study Schedule for Final Exams</p>
+                <div class='task__stats'>
+                  <span><time datetime="2021-11-24T20:00:00"> Dec 23</time></span>
+                  
+                  <span class='task__owner'></span>
+                </div>
+              </div>
+              <div class='task' draggable='true'>
+                <div class='task__tags'><span class='task__tag task__tag--design'>Miscellaneous</span><button class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
+                <p style ="color:#ffffff;">Prepare Presentation Slides</p>
+                <div class='task__stats'>
+                  <span><time datetime="2021-11-24T20:00:00"> Dec 23</time></span>
+                  
+                  <span class='task__owner'></span>
+                </div>
+              </div>
+              <div class='task' draggable='true'>
+                <div class='task__tags'><span class='task__tag task__tag--illustration'>Assignments</span><button class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
+                <p style ="color:#ffffff;">Review and Grade Homework Submissions</p>
+                <div class='task__stats'>
+                  <span><time datetime="2021-11-24T20:00:00"> Dec 23</time></span>
+                 
+                  <span class='task__owner'></span>
+                </div>
+              </div>
+              </div>
+            <div class='project-column'><div class='project-column-heading'>
+                <h2 class='project-column-heading__title'>Planning</h2><button class='project-column-heading__options'><i class="fas fa-ellipsis-h"></i></button>
+              </div>
+              
+               <div class='task' draggable='true'>
+                <div class='task__tags'><span class='task__tag task__tag--illustration'>Assignments</span><button class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
+                <p style ="color:#ffffff;">Plan for Next Week's Project Meeting</p>
+                <div class='task__stats'>
+                  <span><time datetime="2021-11-24T20:00:00"> Dec 23</time></span>
+                 
+                  <span class='task__owner'></span>
+                </div>
+              </div>
+              
+               <div class='task' draggable='true'>
+                <div class='task__tags'><span class='task__tag task__tag--illustration'>Assignments</span><button class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
+                <p style ="color:#ffffff;">Plan Research Experiment Protocols</p>
+                <div class='task__stats'>
+                  <span><time datetime="2021-11-24T20:00:00"> Dec 23</time></span>
+                  
+                  <span class='task__owner'></span>
+                </div>
+              </div>
+              
+               <div class='task' draggable='true'>
+                <div class='task__tags'><span class='task__tag task__tag--copyright'>Academics</span><button class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
+                <p style ="color:#ffffff;">Review UI/UX Designs</p>
+                <div class='task__stats'>
+                  <span><time datetime="2021-11-24T20:00:00"> Dec 23</time></span>
+                  
+                  <span class='task__owner'></span>
+                </div>
+              </div>
+              
+              </div>
+            
+          </div>
+        </main>
+        <aside class='task-details'>
+          <div class='tag-progress'>
+            <h2 style ="color: #ececf8;">Task Progress</h2><hr>
+            <div class='tag-progress'>
+              <p style ="color: #ececf8;">Academics <span>3/8</span></p>
+              <progress class="progress progress--academics" max="8" value="3" style="color: #8282c2;"> 3 </progress>
+            </div>
+            <div class='tag-progress'>
+              <p style ="color: #ececf8;">Assignments <span>6/10</span></p>
+              <progress class="progress progress--assignments" max="10" value="6" style="background-color: blue;"></progress>
+
+            </div>
+            <div class='tag-progress'>
+              <p style ="color: #ececf8;">Miscellaneous <span>2/7</span></p>
+              <progress class="progress progress--miscellaneous" max="7" value="2" style="color: blue;"> 2 </progress>
+            </div>
+          </div>
+          <div id="added-tasks" class="added-tasks">
+            <h2 style="color: #ececf8;">To-Do Later</h2><hr><br>
+            <!-- Added tasks will be dynamically added here -->
+        </div>
+          <div id="completed-tasks" class="completed-tasks">
+         
+    <h2 style ="color: #ececf8;">Completed Tasks</h2><hr><br>
+    <!-- Completed Tasks will be dynamically added here -->
+  </div>
+        </aside>
+      </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const taskNameInput = document.getElementById('taskNameInput');
+            const addTaskButton = document.getElementById('addTaskButton');
+            const addedTasksContainer = document.getElementById('added-tasks');
+
+            addTaskButton.addEventListener('click', () => {
+                const taskName = taskNameInput.value.trim();
+
+                if (taskName !== '') {
+                    const newTask = document.createElement('div');
+                    newTask.textContent = taskName;
+                    newTask.className = 'added-task'; // Added task class for styling
+                    newTask.style.backgroundColor = '#ececf8'; // Set the background color
+                    newTask.style.padding = '10px'; // Set the padding
+                    newTask.style.marginBottom = '10px'; // Set the margin bottom
+                    newTask.style.borderRadius = '4px'; // Set the border radius
+                    newTask.style.color = '#000'; // Set the text color
+                    newTask.style.fontWeight = 'bold'; // Set the font weight
+                    newTask.style.fontSize = '1.2em'; // Set the font size
+
+                    addedTasksContainer.appendChild(newTask);
+
+                    // Clear the input field after adding the task
+                    taskNameInput.value = '';
+                }
+            });
+        });
+    </script>
+    
+      <script>
+        function openPremiumTab() {
+            // Open a new tab with the premium details
+            const premiumWindow = window.open('', '_blank');
+            
+            // Add content to the new tab (you can customize the content as needed)
+            premiumWindow.document.write(`
+                <html>
+                <head>
+                    <title>Premium Plan</title>
+                    <style>
+                        body {
+                            font-family: 'Arial', sans-serif;
+                            margin: 0;
+                            background-color: #f4f4f4;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100vh;
+                        }
+                        .premium-card {
+                            background-color: #fff;
+                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                            border-radius: 8px;
+                            padding: 40px;
+                            text-align: center;
+                            max-width: 600px;
+                        }
+                        .premium-card h2 {
+                            color: #4CAF50;
+                            font-size: 2em;
+                            margin-bottom: 10px;
+                        }
+                        .premium-card p {
+                            color: #555;
+                            font-size: 1.2em;
+                            margin-bottom: 20px;
+                        }
+                        .premium-card ul {
+                            list-style-type: none;
+                            padding: 0;
+                            margin: 0;
+                        }
+                        .premium-card li {
+                            margin-bottom: 10px;
+                            font-size: 1.1em;
+                        }
+                        .dummy-button {
+                            background-color: #4CAF50;
+                            color: white;
+                            padding: 8px 16px;
+                            border: none;
+                            border-radius: 4px;
+                            cursor: pointer;
+                            font-size: 1.2em;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <div class="premium-card">
+                        <h2>Premium Plan</h2>
+                        <p>Unlock the full potential with our premium plan.</p>
+                        <p>Price: $9.99/month</p>
+                        <p>Benefits:</p>
+                        <ul>
+                            <li>Unlimited tasks</li>
+                            <li>Priority support</li>
+                            <li>Calender Support</li>
+                            
+                            <!-- Add more benefits as needed -->
+                        </ul>
+                        <!-- Dummy Button -->
+                        <button class="dummy-button" onclick="dummyButtonClick()">Activate Premium</button>
+                    </div>
+                </body>
+                </html>
+            `);
+        }
+
+
+    </script>
+    
+</body>
+</html>
